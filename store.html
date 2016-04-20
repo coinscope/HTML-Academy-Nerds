@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин готовых макетов Дизайн-студии «Nёrd's»</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+  	<header class="site-header">
+  		<div class="container">
+  			<div class="header-top-row">
+					<div class="page-logo">
+						<a href="index.html" title="Главная">
+							<img src="images/logo.png" alt="Nerd's design studio" width="100" height="50">
+						</a>
+					</div>
+					<nav class="main-navigation">
+						<ul>
+	            <li>
+	              <a href="index.html">Студия</a>
+	            </li>
+	            <li>
+	              <a href="#">Клиенты</a>
+	            </li>
+	            <li class="active">
+	              <a href="#">Магазин</a>
+	            </li>
+	            <li>
+	              <a href="#">Контакты</a>
+	            </li>
+          	</ul>
+					</nav>
+					<div class="cart-block">
+						<a href ="#" class="cart">Корзина</a>
+					</div>
+  			</div>
+				<div class="heading">
+					<h1>Добро пожаловать в магазин готовых макетов</h1>
+				</div>
+  		</div>
+  	</header>
+		
+		<main>
+			<div class="container">
+				<div class="left-column">
+					<form class="filter-tools" action="" method="get">
+						<fieldset>
+							<legend>Стоимость:</legend>
+							<div class="price-range">
+								<div class="handle bottom-price-handle"></div>
+								<div class="handle top-price-handle"></div>
+								<div class="groove"></div> <!-- one more div for selected range -->
+							</div>
+							<p>
+								ОТ
+								<input type="text" name="min-range" id="min-range" value="0" /> <!-- type="number" or hard formatting? -->
+								ДО
+								<input type="text" name="max-range" id="max-range" value="15000" />
+							</p>
+						</fieldset>
+						<fieldset>
+							<legend>Сетка:</legend>
+								<ul>
+									<li>
+										<input type="radio" name="grid" id="adaptive" />
+										<label for="adaptive">Адаптивная</label>
+									</li>
+									<li>
+										<input type="radio" name="grid" id="fixed" />
+										<label for="fixed">Фиксированная</label>
+									</li>
+									<li>
+										<input type="radio" name="grid" id="fluid" />
+										<label for="fluid">Резиновая</label>
+									</li>
+								</ul>
+						</fieldset>
+						<fieldset>
+							<legend>Особенности:</legend>
+							<ul>
+									<li>
+										<input type="checkbox" name="slider" id="slider" checked />
+										<label for="slider">Слайдер</label>
+									</li>
+									<li>
+										<input type="checkbox" name="benefits" id="benefits" />
+										<label for="benefits">Блок преимуществ</label>
+									</li>
+									<li>
+										<input type="checkbox" name="news" id="news" checked />
+										<label for="news">Новости</label>
+									</li>
+									<li>
+										<input type="checkbox" name="gallery" id="gallery" />
+										<label for="gallery">Галерея</label>
+									</li>
+									<li>
+										<input type="checkbox" name="basket" id="basket" />
+										<label for="basket">Корзина</label>
+									</li>
+								</ul>
+						</fieldset>
+						<button type="submit">Показать</button>
+					</form>
+				</div>
+				<div class="right-column">
+					<div class="sort-tools">
+						Сортировать:
+						<a href="#">По цене</a>
+						<a href="#">По типу</a>
+						<a href="#">По функционалу</a>
+						<span class="sort-direction">
+							<a href="#" class="sort-downwards">вниз</a>
+							<a href="#" class="sort-upwards">вверх</a>
+						</span>
+					</div>
+					<div class="templates">
+						
+						<div class="template-frame">
+							<div class="template-controls">
+								<!-- controls -->
+							</div>
+							<img src="img/template1.jpg">
+							<div class="template-overlay">
+								<h5 class="template-name">Aviator</h5>
+								<p class="template-decription">сайт сайт сайт сайт сайт сайт сайт сайт сайт сайт</p>
+								<button class="template-price">10000 р.</button>
+							</div>
+						</div>
+
+						<div class="template-frame">
+							<div class="template-controls">
+								<!-- controls -->
+							</div>
+							<img src="img/template1.jpg">
+							<div class="template-overlay">
+								<h5 class="template-name">Sunset</h5>
+								<p class="template-decription">сайт сайт сайт сайт сайт сайт сайт сайт сайт сайт</p>
+								<button class="template-price">10000 р.</button>
+							</div>
+						</div>
+
+						<div class="template-frame">
+							<div class="template-controls">
+								<!-- controls -->
+							</div>
+							<img src="img/template1.jpg">
+							<div class="template-overlay">
+								<h5 class="template-name">Forte</h5>
+								<p class="template-decription">сайт сайт сайт сайт сайт сайт сайт сайт сайт сайт</p>
+								<button class="template-price">10000 р.</button>
+							</div>
+						</div>
+
+						<div class="template-frame">
+							<div class="template-controls">
+								<!-- controls -->
+							</div>
+							<img src="img/template1.jpg">
+							<div class="template-overlay">
+								<h5 class="template-name">Modern Organic Thai</h5>
+								<p class="template-decription">сайт сайт сайт сайт сайт сайт сайт сайт сайт сайт</p>
+								<button class="template-price">10000 р.</button>
+							</div>
+						</div>
+
+						<div class="template-frame">
+							<div class="template-controls">
+								<!-- controls -->
+							</div>
+							<img src="img/template1.jpg">
+							<div class="template-overlay">
+								<h5 class="template-name">Avenue</h5>
+								<p class="template-decription">сайт сайт сайт сайт сайт сайт сайт сайт сайт сайт</p>
+								<button class="template-price">10000 р.</button>
+							</div>
+						</div>
+
+						<div class="template-frame">
+							<div class="template-controls">
+								<!-- controls -->
+							</div>
+							<img src="img/template1.jpg">
+							<div class="template-overlay">
+								<h5 class="template-name">Dovetail</h5>
+								<p class="template-decription">сайт сайт сайт сайт сайт сайт сайт сайт сайт сайт</p>
+								<button class="template-price">10000 р.</button>
+							</div>
+						</div>
+
+					</div>					
+				</div>
+				<div class="pagination"> <!-- wrap in a container + clearfix for previous? -->
+					<ul>
+						<li><a href="#" class="disabled">Предыдущая</a></li>
+						<li><a href="#" class="active">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">Следующая</a></li>
+					</ul>
+				</div>
+			</div>
+		</main>
+
+		<footer class="site-footer">
+				<div class="map-overlay">
+					<div class="container">
+						<div class="contact-details">
+							<h4>NЁRDS DESIGN STUDIO</h4>
+							<p class="contacts-text">
+								191186, Санкт-Петербург, <br>
+								ул. Б. Конюшенная, д. 19/8
+							</p>
+							<p class="contacts-text">
+								тел. +7 (812) 275-75-75
+							</p>
+							<button>Напишите нам</button> <!-- Нужно ли завернуть в <p> здесь и выше? -->
+						</div>
+					</div>
+				</div>
+					
+			<div class="container">
+				<div class="social-buttons">
+					<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+          <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+				</div>
+				<div class="footer-friends">
+					<p class="friends-heading">
+						Давайте дружить: это выгодно!
+					</p>
+					<p class="friends-discount">
+						Скидка 10% для друзей из социальных сетей
+					</p>
+				</div>
+			</div>
+		</footer>
+
+  </body>
+</html>
