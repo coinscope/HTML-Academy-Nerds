@@ -1,0 +1,198 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: sans-serif;
+	background-color: #fff;
+}
+.container {
+	width: 880px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.clearfix::after {
+	content:'';
+	display: table;
+	clear: both;
+}
+.site-header {
+	min-height: 328px; /*только для сетки, помнить паддинги*/
+	background-color: #eee;
+	padding-top: 27px;
+	padding-bottom: 80px; /*может margin от кнопки?*/
+}
+.page-logo {
+	float: left;
+	width: 139px;
+	height: 56px;
+}
+.header-top-row {
+	margin-bottom: 52px;
+}
+.main-navigation {
+	float: right;
+}
+.main-navigation ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.main-navigation li {
+	display: inline-block;
+	text-align: right;
+}
+.main-navigation a {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.promo {
+	width: 450px;
+}
+.promo-heading {
+	margin-top: 20px;
+}
+section {
+	border-bottom: 2px solid #eee;
+}
+.services-block {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.service {
+	float: left;
+	width: 240px;
+	margin-right: 80px;
+	min-height: 300px; /*только для сетки*/
+}
+.service:last-child {
+	margin-right: 0;
+}
+.service-image {
+	width: 240px;
+	height: 124px;
+	background-color: #fb565a; /*только для сетки*/
+}
+.about {
+	padding-top: 59px;
+	padding-bottom: 65px;
+}
+.about-left-column {
+	float: left;
+	width: 620px;
+}
+.about-right-column {
+	float: right;
+	width: 240px;
+}
+.partners {
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+.partner {
+	float: left;
+	width: 220px;
+	margin-right: 100px;
+	line-height: 91px;
+	height: 91px;
+	text-align: center;
+}
+.partner:last-child {
+	margin-right: 0;
+}
+.partner img {
+	vertical-align: middle;
+}
+.site-footer {
+	margin-top: 85px;
+}
+.map-overlay {
+	min-height: 416px;
+	background-color: #ddd;
+	border-top: 1px solid transparent; /*preventing merging of margins*/
+}
+.contact-details {
+	width: 204px;
+	height: 188px;
+	padding: 26px 23px;
+	background-color: white;
+	margin-top: 87px;
+	margin-bottom: 85px; /*remove*/
+}
+.footer-bottom {
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+.social-buttons {
+	float: left;
+	width: 240px;
+}
+.footer-friends {
+	float: right;
+	width: 560px;
+}
+/*============== STORE BODY ==============*/
+.main-store {
+	padding-top: 70px;
+	padding-bottom: 79px;
+}
+.left-column-store {
+	float: left;
+	width: 240px;
+}
+.right-column-store {
+	float: right;
+	width: 560px;
+}
+.sort-tools {
+	height: 36px;
+}
+.template-frame {
+	float: left;
+	width: 240px;
+	height: 270px;
+	margin-right: 80px;
+	margin-bottom: 80px;
+	position: relative;
+}
+.template-frame:nth-child(even) {
+	margin-right: 0;
+}
+.template-controls {
+	height: 30px;
+	background-color: #ddd;
+}
+.template-frame img {
+	width: 240px;
+	height: 240px;
+}
+.template-overlay {
+	position: absolute;
+	top: 30px;
+	left: 0;
+	display: none;
+	width: 240px;
+	height: 240px;
+}
+.template-frame:hover .template-overlay {
+	display: block;
+}
+.pagination {
+	height: 38px;
+	text-align: center;
+}
+.pagination a {
+	display: inline-block;
+	height: 34px;
+	min-width: 34px;
+	line-height: 34px;
+	border: 2px solid #f1f1f1;
+	border-radius: 2px;
+	vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+	background-color: #f1f1f1
+}
+.pagination a.active {
+	background-color: white;
+}

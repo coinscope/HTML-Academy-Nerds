@@ -8,10 +8,10 @@
   <body>
   	<header class="site-header">
   		<div class="container">
-  			<div class="header-top-row">
+  			<div class="header-top-row clearfix">
 					<div class="page-logo">
 						<a href="index.html" title="Главная">
-							<img src="images/logo.png" alt="Nerd's design studio" width="100" height="50">
+							<img src="img/logo.png" alt="Nerd's design studio" width="139" height="56">
 						</a>
 					</div>
 					<nav class="main-navigation">
@@ -28,11 +28,11 @@
 	            <li>
 	              <a href="#">Контакты</a>
 	            </li>
+          		<li class="cart-block">
+	              <a href ="#" class="cart">Корзина</a>
+	            </li>
           	</ul>
 					</nav>
-					<div class="cart-block">
-						<a href ="#" class="cart">Корзина</a>
-					</div>
   			</div>
 				<div class="heading">
 					<h1>Добро пожаловать в магазин готовых макетов</h1>
@@ -40,10 +40,10 @@
   		</div>
   	</header>
 		
-		<main>
-			<div class="container">
-				<div class="left-column">
-					<form class="filter-tools" action="" method="get">
+		<main class="main-store">
+			<div class="container clearfix">
+				<div class="left-column-store">
+					<form class="filter-tools" action="/" method="get">
 						<fieldset>
 							<legend>Стоимость:</legend>
 							<div class="price-range">
@@ -103,7 +103,7 @@
 						<button type="submit">Показать</button>
 					</form>
 				</div>
-				<div class="right-column">
+				<div class="right-column-store">
 					<div class="sort-tools">
 						Сортировать:
 						<a href="#">По цене</a>
@@ -114,8 +114,8 @@
 							<a href="#" class="sort-upwards">вверх</a>
 						</span>
 					</div>
-					<div class="templates">
-						
+
+					<div class="templates clearfix">						
 						<div class="template-frame">
 							<div class="template-controls">
 								<!-- controls -->
@@ -190,13 +190,14 @@
 
 					</div>					
 				</div>
-				<div class="pagination"> <!-- wrap in a container + clearfix for previous? -->
-					<ul>
-						<li><a href="#" class="disabled">Предыдущая</a></li>
-						<li><a href="#" class="active">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">Следующая</a></li>
+			</div>
+			<div class="container">
+				<div class="pagination">
+					<a href="#" class="disabled">Предыдущая</a>
+					<a href="#" class="active">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">Следующая</a>
 					</ul>
 				</div>
 			</div>
@@ -219,7 +220,7 @@
 					</div>
 				</div>
 					
-			<div class="container">
+			<div class="footer-bottom container clearfix">
 				<div class="social-buttons">
 					<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
           <a href="#" class="social-btn social-btn-fb">Фейсбук</a>

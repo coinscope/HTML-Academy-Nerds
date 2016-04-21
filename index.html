@@ -8,9 +8,9 @@
   <body>
   	<header class="site-header">
   		<div class="container">
-  			<div class="header-top-row">
+  			<div class="header-top-row clearfix">
 					<div class="page-logo">
-						<img src="images/logo.png" alt="Nerd's design studio" width="100" height="50">
+						<img src="img/logo.png" alt="Nerd's design studio" width="139" height="56">
 					</div>
 					<nav class="main-navigation">
 						<ul>
@@ -26,11 +26,11 @@
 	            <li>
 	              <a href="#">Контакты</a>
 	            </li>
+	            <li class="cart-block">
+	              <a href ="#" class="cart">Корзина</a>
+	            </li>
           	</ul>
 					</nav>
-					<div class="cart-block">
-						<a href ="#" class="cart">Корзина</a>
-					</div>
   			</div>
 				<div class="slider">
 					<div class="slider-controls"></div>
@@ -46,10 +46,10 @@
   	</header>
 		
 		<section class="services-block">
-			<div class="container">
+			<div class="container clearfix">
 				<div class="service">
 					<div class="service-image">
-						<img src="images/service1.png" alt="">
+						<img src="img/service1.png" alt="">
 					</div>
 					<h3 class="service-name">Веб-сайты</h3>
 					<p class="service-description">Мир никогда не будет прежним, после того как увидит ваш сайт!</p>
@@ -57,7 +57,7 @@
 				</div>
 				<div class="service">
 					<div class="service-image">
-						<img src="images/service2.png" alt="">
+						<img src="img/service2.png" alt="">
 					</div>
 					<h3 class="service-name">Приложения</h3>
 					<p class="service-description">Покорите топ-10 приложений в AppStore и Google Play</p>
@@ -65,7 +65,7 @@
 				</div>
 				<div class="service">
 					<div class="service-image">
-						<img src="images/service3.png" alt="">
+						<img src="img/service3.png" alt="">
 					</div>
 					<h3 class="service-name">Презентации</h3>
 					<p class="service-description">Вы даже не представляете, насколько вы изумительны!</p>
@@ -74,23 +74,21 @@
 			</div>
 		</section>
 		
-		<hr class="container divider" />
-		
 		<section class="about">
 			<div class="container">
-				<div class="about-row">
+				<div class="about-row clearfix">
 					<div class="about-left-column">
 						<p class="about-heading">Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара.</p>
 						<p class="about-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
 					</div>
 					<div class="about-right-column">
 						<div class="about-logo">
-							<img src="images/large-logo.png" alt="Nёrd's logo">
+							<img src="img/large-logo.png" alt="Nёrd's logo">
 							<p>since 2004</p> <!-- part of logo or divider or paragraph? -->
 						</div>
 					</div>
 				</div>
-				<div class="about-row">
+				<div class="about-row clearfix">
 					<div class="about-left-column">
 						<h5>Выполняем заказы на разработку:</h5>
 						<ul>
@@ -111,21 +109,19 @@
 			</div>			
 		</section>
 
-		<hr class="container divider" />
-
-		<div class="partners">
-			<div class="partner">
-				<img src="images/glukhanko.png" alt="Glukhanko logo" />
+		<section class="partners">
+			<div class="container clearfix">
+				<div class="partner">
+					<img src="img/glukhanko.svg" alt="Glukhanko logo" width="196" height="35" />
+				</div>
+				<div class="partner">
+					<img src="img/htmlacademy.svg" alt="HTML Academy logo" width="199" height="68" />
+				</div>
+				<div class="partner">
+					<img src="img/borodinski.svg" alt="Borodinski logo" width="209" height="91" />
+				</div>
 			</div>
-			<div class="partner">
-				<img src="images/htmlacademy.png" alt="HTML Academy logo" />
-			</div>
-			<div class="partner">
-				<img src="images/borodinski.png" alt="Borodinski logo" />
-			</div>
-		</div>
-
-		<hr class="container divider" />
+		</section>
 
 		<footer class="site-footer">
 				<div class="map-overlay">
@@ -144,7 +140,7 @@
 					</div>
 				</div>
 					
-			<div class="container">
+			<div class="footer-bottom container clearfix">
 				<div class="social-buttons">
 					<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
           <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
