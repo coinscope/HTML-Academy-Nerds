@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия «Nёrd's»</title>
+    <link rel="stylesheet" href="css/symbols-nerds.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
   </head>
   <body>
   	<header class="site-header">
@@ -14,31 +17,31 @@
 					</div>
 					<nav class="main-navigation">
 						<ul>
-	            <li class="active">
-	              <a href="#">Студия</a>
-	            </li>
-	            <li>
-	              <a href="#">Клиенты</a>
-	            </li>
-	            <li>
-	              <a href="store.html">Магазин</a>
-	            </li>
-	            <li>
-	              <a href="#">Контакты</a>
-	            </li>
-	            <li class="cart-block">
-	              <a href ="#" class="cart">Корзина</a>
-	            </li>
-          	</ul>
+							<li class="active">
+								<a href="#">Студия</a>
+							</li>
+							<li>
+								<a href="#">Клиенты</a>
+							</li>
+							<li>
+								<a href="store.html">Магазин</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+							<li>
+								<a href ="#" class="cart">Корзина</a>
+							</li>
+						</ul>
 					</nav>
   			</div>
 				<div class="slider">
 					<div class="slider-controls"></div>
-					<div class="slides slide1"> 
+					<div class="slide slide1"> 
 						<div class="promo"> <!-- not sure -->
 							<h2 class="promo-heading">Долго, дорого, скупулёзно.</h2>
-							<p class="promo-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-							<button class="promo-btn btn-red">Узнать больше</button>
+							<p class="promo-text">Математически выверенный дизайн для&nbsp;вашего сайта или мобильного приложения.</p>
+							<a href="#" class="btn btn-red">Узнать больше</a>
 						</div>
 					</div>
 				</div>
@@ -49,30 +52,32 @@
 			<div class="container clearfix">
 				<div class="service">
 					<div class="service-image">
-						<img src="img/service1.png" alt="">
+						<img src="img/service_1.svg" alt="" width="240" height="124">
 					</div>
 					<h3 class="service-name">Веб-сайты</h3>
 					<p class="service-description">Мир никогда не будет прежним, после того как увидит ваш сайт!</p>
-					<button class="order-btn btn-red">Заказать</button>
+					<a href="#" class="btn btn-red">Заказать</a>
 				</div>
 				<div class="service">
 					<div class="service-image">
-						<img src="img/service2.png" alt="">
+						<img src="img/service_2.svg" alt="" width="240" height="124">
 					</div>
 					<h3 class="service-name">Приложения</h3>
 					<p class="service-description">Покорите топ-10 приложений в AppStore и Google Play</p>
-					<button class="order-btn btn-green">Заказать</button>
+					<a href="#" class="btn btn-green">Заказать</a>
 				</div>
 				<div class="service">
 					<div class="service-image">
-						<img src="img/service3.png" alt="">
+						<img src="img/service_3.svg" alt="" width="240" height="124">
 					</div>
 					<h3 class="service-name">Презентации</h3>
 					<p class="service-description">Вы даже не представляете, насколько вы изумительны!</p>
-					<button class="order-btn btn-yellow">Заказать</button>
+					<a href="#" class="btn btn-yellow">Заказать</a>
 				</div>
 			</div>
 		</section>
+
+		<hr class="container">
 		
 		<section class="about">
 			<div class="container">
@@ -83,23 +88,23 @@
 					</div>
 					<div class="about-right-column">
 						<div class="about-logo">
-							<img src="img/large-logo.png" alt="Nёrd's logo">
-							<p>since 2004</p> <!-- part of logo or divider or paragraph? -->
+							<img src="img/nerds_logo2.svg" alt="Nёrd's logo" width="185" height="73">
+							<p class="age"><span>since 2004</span></p>
 						</div>
 					</div>
 				</div>
 				<div class="about-row clearfix">
 					<div class="about-left-column">
-						<h5>Выполняем заказы на разработку:</h5>
-						<ul>
+						<p class="about-text text-uppercase">Выполняем заказы на разработку:</p>
+						<ul class="about-text custom-list">
 							<li>Веб-сайтов любой сложности</li>
 							<li>Мобильных приложений для iOS и Android</li>
 							<li>Слайдшоу и видео для корпоративных презентаций</li>
 						</ul>
 					</div>
 					<div class="about-right-column">
-						<h5>Как мы работаем:</h5>
-						<ul>
+						<p class="about-text text-uppercase">Как мы работаем:</p>
+						<ul class="about-text custom-list">
 							<li>С самоотдачей 146%</li>
 							<li>Соблюдая сроки на 100%</li>
 							<li>По предоплате 50%</li>
@@ -109,42 +114,54 @@
 			</div>			
 		</section>
 
+		<hr class="container">
+
 		<section class="partners">
 			<div class="container clearfix">
 				<div class="partner">
-					<img src="img/glukhanko.svg" alt="Glukhanko logo" width="196" height="35" />
+					<a href="#">
+						<img src="img/glukhanko.svg" alt="Glukhanko logo" width="196" height="35" />
+					</a>
 				</div>
 				<div class="partner">
-					<img src="img/htmlacademy.svg" alt="HTML Academy logo" width="199" height="68" />
+					<a href="#">
+						<img src="img/htmlacademy.svg" alt="HTML Academy logo" width="199" height="68" />
+					</a>
 				</div>
 				<div class="partner">
-					<img src="img/borodinski.svg" alt="Borodinski logo" width="209" height="91" />
+					<a href="#">
+						<img src="img/borodinski.svg" alt="Borodinski logo" width="209" height="91" />
+					</a>
 				</div>
 			</div>
 		</section>
 
+		<hr class="container">
+
 		<footer class="site-footer">
-				<div class="map-overlay">
-					<div class="container">
-						<div class="contact-details">
-							<h4>NЁRDS DESIGN STUDIO</h4>
-							<p class="contacts-text">
-								191186, Санкт-Петербург, <br>
-								ул. Б. Конюшенная, д. 19/8
-							</p>
-							<p class="contacts-text">
-								тел. +7 (812) 275-75-75
-							</p>
-							<button>Напишите нам</button> <!-- Нужно ли завернуть в <p> здесь и выше? -->
-						</div>
+			<div class="footer-top">
+				<div id="map" class="map-overlay"></div>
+				<div class="container">
+					<div class="contact-details">
+						<h4 class="contact-name">NЁRDS DESIGN STUDIO</h4>
+						<p class="contacts-text">
+							191186, Санкт-Петербург, <br>
+							ул. Б. Конюшенная, д. 19/8
+						</p>
+						<p class="contacts-text">
+							тел. +7 (812) 275-75-75
+						</p>
+						<a href="#" class="btn btn-red write-us">Напишите нам</a> <!-- Нужно ли завернуть в <p> здесь и выше? -->
 					</div>
 				</div>
+			</div>
+				
 					
 			<div class="footer-bottom container clearfix">
-				<div class="social-buttons">
-					<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-          <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+				<div class="social-buttons-block">
+					<a href="#" class="social-btn"><span class="icon-vk"></span></a>
+          			<a href="#" class="social-btn"><span class="icon-facebook"></span></a>
+         			<a href="#" class="social-btn"><span class="icon-instagramm"></span></a>
 				</div>
 				<div class="footer-friends">
 					<p class="friends-heading">
@@ -156,6 +173,105 @@
 				</div>
 			</div>
 		</footer>
+
+		<div class="modal-content">
+			<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+			<form class="main-form" action="" method="post">
+				<div class="main-form-block clearfix">
+					<div class="main-form-left">
+						<label for="name">Ваше имя:</label><br>
+						<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+					</div>
+					<div class="main-form-right">
+						<label for="email">Ваш e-mail:</label><br>
+						<input type="email" name="email" id="email" placeholder="для отправки ответа">
+					</div>
+				</div>
+
+				<label for="message">Текст письма:</label><br>
+				<textarea placeholder="В свободной форме" name="message" id="message"></textarea>
+
+				<button class="btn btn-red main-form-button" type="submit">Отправить</button>
+			</form>
+			
+		</div>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script type="text/javascript">
+    ymaps.ready(init);
+    var myMap,
+    		myPlacemark;
+
+    function init(){     
+        myMap = new ymaps.Map("map", {
+            center: [59.9392, 30.32],
+            zoom: 17,
+            controls: ["zoomControl", "fullscreenControl"]
+        });
+        myPlacemark = new ymaps.Placemark([59.938631, 30.323055], { hintContent: 'NЁRDS DESIGN STUDIO', balloonContent: '191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8' }, {
+        	iconLayout: 'default#image',
+        	iconImageHref: 'img/nerds_map_mark.svg',
+        	iconImageSize: [231, 190],
+        	iconImageOffset: [-50, -190]
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+    }
+	</script>
+
+	<script type="text/javascript">
+		var modalOpen = document.querySelector(".write-us");
+		var popup = document.querySelector(".modal-content");
+		var modalClose = popup.querySelector(".modal-content-close");
+		var personName = popup.querySelector('[name="name"]');
+		var personEmail = popup.querySelector('[name="email"]');
+		var message = popup.querySelector('textarea');
+		var form = popup.querySelector('form');
+		var savedName = localStorage.getItem("personName");
+		var savedEmail = localStorage.getItem("personEmail");
+
+		modalOpen.addEventListener("click", function(event) {
+			event.preventDefault();
+			popup.classList.add("modal-content-show");
+			
+			if (savedName) {
+				personName.value = savedName;
+				personEmail.focus();
+				if (savedEmail) {
+					personEmail.value = savedEmail;
+					message.focus();
+				}
+			} else {
+				personName.focus();
+			};
+
+			return false;
+		});
+
+		modalClose.addEventListener("click", function(event) {
+			event.preventDefault();
+			popup.classList.remove("modal-content-show");
+			popup.classList.remove("modal-error");
+		});
+
+		form.addEventListener("submit", function(event) {
+			if (!personName.value || !personEmail.value || !message.value) {
+				event.preventDefault();
+				popup.classList.add("modal-error");
+			} else {
+				localStorage.setItem("personName", personName.value);
+				localStorage.setItem("personEmail", personEmail.value);
+			}
+		});
+
+		window.addEventListener("keydown", function(event) {
+			if (event.keyCode === 27) {
+				if (popup.classList.contains("modal-content-show")) {
+					popup.classList.remove("modal-content-show");
+				}
+			}
+		});
+
+	</script>
 
   </body>
 </html>

@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин готовых макетов Дизайн-студии «Nёrd's»</title>
+    <link rel="stylesheet" href="css/symbols-nerds.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   </head>
   <body>
   	<header class="site-header">
@@ -204,27 +206,29 @@
 		</main>
 
 		<footer class="site-footer">
-				<div class="map-overlay">
-					<div class="container">
-						<div class="contact-details">
-							<h4>NЁRDS DESIGN STUDIO</h4>
-							<p class="contacts-text">
-								191186, Санкт-Петербург, <br>
-								ул. Б. Конюшенная, д. 19/8
-							</p>
-							<p class="contacts-text">
-								тел. +7 (812) 275-75-75
-							</p>
-							<button>Напишите нам</button> <!-- Нужно ли завернуть в <p> здесь и выше? -->
-						</div>
+			<div class="footer-top">
+				<div id="map" class="map-overlay"></div>
+				<div class="container"">
+					<div class="contact-details">
+						<h4 class="contact-name">NЁRDS DESIGN STUDIO</h4>
+						<p class="contacts-text">
+							191186, Санкт-Петербург, <br>
+							ул. Б. Конюшенная, д. 19/8
+						</p>
+						<p class="contacts-text">
+							тел. +7 (812) 275-75-75
+						</p>
+						<a href="#" class="btn write-us">Напишите нам</a> <!-- Нужно ли завернуть в <p> здесь и выше? -->
 					</div>
 				</div>
+			</div>
+				
 					
 			<div class="footer-bottom container clearfix">
-				<div class="social-buttons">
-					<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-          <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+				<div class="social-buttons-block">
+					<a href="#" class="social-btn"><span class="icon-vk"></span></a>
+          			<a href="#" class="social-btn"><span class="icon-facebook"></span></a>
+         			<a href="#" class="social-btn"><span class="icon-instagramm"></span></a>
 				</div>
 				<div class="footer-friends">
 					<p class="friends-heading">
@@ -236,6 +240,50 @@
 				</div>
 			</div>
 		</footer>
+
+		<div class="modal-content">
+			<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+			<form class="main-form" action="" method="post">
+				<div class="main-form-block clearfix">
+					<div class="main-form-left">
+						<label for="name">Ваше имя:</label><br>
+						<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+					</div>
+					<div class="main-form-right">
+						<label for="email">Ваш e-mail:</label><br>
+						<input type="email" name="email" id="email" placeholder="для отправки ответа">
+					</div>
+				</div>
+
+				<label for="message">Текст письма:</label><br>
+				<textarea placeholder="В свободной форме" name="message" id="message"></textarea>
+
+				<button class="btn btn-red main-form-button" type="submit">Отправить</button>
+			</form>
+			
+		</div>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script type="text/javascript">
+    ymaps.ready(init);
+    var myMap,
+    		myPlacemark;
+
+    function init(){     
+        myMap = new ymaps.Map("map", {
+            center: [59.9392, 30.32],
+            zoom: 17,
+            controls: ["zoomControl", "fullscreenControl"]
+        });
+        myPlacemark = new ymaps.Placemark([59.938631, 30.323055], { hintContent: 'NЁRDS DESIGN STUDIO', balloonContent: '191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8' }, {
+        	iconLayout: 'default#image',
+        	iconImageHref: 'img/nerds_map_mark.svg',
+        	iconImageSize: [231, 190],
+        	iconImageOffset: [-50, -190]
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+    }
+	</script>
 
   </body>
 </html>
