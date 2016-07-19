@@ -36,8 +36,8 @@
           	</ul>
 					</nav>
   			</div>
-				<div class="heading">
-					<h1>Добро пожаловать в магазин готовых макетов</h1>
+				<div class="store-heading">
+					<h1>Добро пожаловать в магазин <br>готовых макетов</h1>
 				</div>
   		</div>
   	</header>
@@ -49,16 +49,25 @@
 						<fieldset>
 							<legend>Стоимость:</legend>
 							<div class="price-range">
-								<div class="handle bottom-price-handle"></div>
-								<div class="handle top-price-handle"></div>
-								<div class="groove"></div> <!-- one more div for selected range -->
+								<div class="range-groove">
+									<div class="selected-range">
+										<div class="range-handle bottom-price-handle"></div>
+										<div class="range-handle top-price-handle"></div>
+									</div>
+								</div>
 							</div>
-							<p>
-								ОТ
-								<input type="text" name="min-range" id="min-range" value="0" /> <!-- type="number" or hard formatting? -->
-								ДО
-								<input type="text" name="max-range" id="max-range" value="15000" />
-							</p>
+							<table class="range-wrapper">
+								<tr>
+									<td>
+										ОТ
+										<input type="text" name="min-range" id="min-range" value="0" maxlength="6" /> <!-- type="number" or hard formatting? -->
+									</td>
+									<td>
+										ДО
+										<input type="text" name="max-range" id="max-range" value="15000" maxlength="6" />
+									</td>
+								</tr>
+							</table>
 						</fieldset>
 						<fieldset>
 							<legend>Сетка:</legend>
@@ -106,87 +115,111 @@
 					</form>
 				</div>
 				<div class="right-column-store">
-					<div class="sort-tools">
-						Сортировать:
+					<div class="sort-tools clearfix">
+						<span class="sort-by">Сортировать:</span>
 						<a href="#">По цене</a>
 						<a href="#">По типу</a>
 						<a href="#">По функционалу</a>
 						<span class="sort-direction">
-							<a href="#" class="sort-downwards">вниз</a>
-							<a href="#" class="sort-upwards">вверх</a>
+							<a href="#" class="active" title="по убыванию">&#x25bc;</a>
+							<a href="#" title="по возрастанию">&#x25b2;</a>
 						</span>
 					</div>
 
 					<div class="templates clearfix">						
 						<div class="template-frame">
-							<div class="template-controls">
-								<!-- controls -->
+							<div class="template-header">
+								<span class="template-dot"></span>
+								<span class="template-dot"></span>
+								<span class="template-dot"></span>
 							</div>
-							<img src="img/template1.jpg">
-							<div class="template-overlay">
-								<h5 class="template-name">Aviator</h5>
-								<p class="template-decription">сайт сайт сайт сайт сайт сайт сайт сайт сайт сайт</p>
-								<button class="template-price">10000 р.</button>
-							</div>
-						</div>
-
-						<div class="template-frame">
-							<div class="template-controls">
-								<!-- controls -->
-							</div>
-							<img src="img/template1.jpg">
-							<div class="template-overlay">
-								<h5 class="template-name">Sunset</h5>
-								<p class="template-decription">сайт сайт сайт сайт сайт сайт сайт сайт сайт сайт</p>
-								<button class="template-price">10000 р.</button>
+							<div class="template-main">
+								<img src="img/templates/01-aviator.png">
+								<div class="template-overlay">
+									<h5 class="template-name">Aviator</h5>
+									<p class="template-description">Одностраничный макет с авторским дизайном</p>
+									<a class="btn btn-red template-price">8000 р.</a>
+								</div>
 							</div>
 						</div>
 
 						<div class="template-frame">
-							<div class="template-controls">
-								<!-- controls -->
+							<div class="template-header">
+								<span class="template-dot"></span>
+								<span class="template-dot"></span>
+								<span class="template-dot"></span>
 							</div>
-							<img src="img/template1.jpg">
-							<div class="template-overlay">
-								<h5 class="template-name">Forte</h5>
-								<p class="template-decription">сайт сайт сайт сайт сайт сайт сайт сайт сайт сайт</p>
-								<button class="template-price">10000 р.</button>
-							</div>
-						</div>
-
-						<div class="template-frame">
-							<div class="template-controls">
-								<!-- controls -->
-							</div>
-							<img src="img/template1.jpg">
-							<div class="template-overlay">
-								<h5 class="template-name">Modern Organic Thai</h5>
-								<p class="template-decription">сайт сайт сайт сайт сайт сайт сайт сайт сайт сайт</p>
-								<button class="template-price">10000 р.</button>
+							<div class="template-main">
+								<img src="img/templates/02-sunset.png">
+								<div class="template-overlay">
+									<h5 class="template-name">Sunset</h5>
+									<p class="template-description">Интернет-магазин с личным кабинетом</p>
+									<a class="btn btn-red template-price">10000 р.</a>
+								</div>
 							</div>
 						</div>
 
 						<div class="template-frame">
-							<div class="template-controls">
-								<!-- controls -->
+							<div class="template-header">
+								<span class="template-dot"></span>
+								<span class="template-dot"></span>
+								<span class="template-dot"></span>
 							</div>
-							<img src="img/template1.jpg">
-							<div class="template-overlay">
-								<h5 class="template-name">Avenue</h5>
-								<p class="template-decription">сайт сайт сайт сайт сайт сайт сайт сайт сайт сайт</p>
-								<button class="template-price">10000 р.</button>
+							<div class="template-main">
+								<img src="img/templates/03-forte.png">
+								<div class="template-overlay">
+									<h5 class="template-name">Forte</h5>
+									<p class="template-description">Отличный макет для личного блога</p>
+									<a class="btn btn-red template-price">5000 р.</a>
+								</div>
 							</div>
 						</div>
 
 						<div class="template-frame">
-							<div class="template-controls">
-								<!-- controls -->
+							<div class="template-header">
+								<span class="template-dot"></span>
+								<span class="template-dot"></span>
+								<span class="template-dot"></span>
 							</div>
-							<img src="img/template1.jpg">
-							<div class="template-overlay">
-								<h5 class="template-name">Dovetail</h5>
-								<p class="template-decription">сайт сайт сайт сайт сайт сайт сайт сайт сайт сайт</p>
-								<button class="template-price">10000 р.</button>
+							<div class="template-main">
+							<img src="img/templates/04-marquee.png">
+								<div class="template-overlay">
+									<h5 class="template-name">Modern Organic Thai</h5>
+									<p class="template-description">Сайт для ресторана быстрого питания</p>
+									<a class="btn btn-red template-price">12000 р.</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="template-frame">
+							<div class="template-header">
+								<span class="template-dot"></span>
+								<span class="template-dot"></span>
+								<span class="template-dot"></span>
+							</div>
+							<div class="template-main">
+								<img src="img/templates/05-avenue.png">
+								<div class="template-overlay">
+									<h5 class="template-name">Avenue</h5>
+									<p class="template-description">Макет для блога о путешествиях</p>
+									<a class="btn btn-red template-price">8000 р.</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="template-frame">
+							<div class="template-header">
+								<span class="template-dot"></span>
+								<span class="template-dot"></span>
+								<span class="template-dot"></span>
+							</div>
+							<div class="template-main">
+								<img src="img/templates/06-dovetail.png">
+								<div class="template-overlay">
+									<h5 class="template-name">Dovetail</h5>
+									<p class="template-description">Интернет-магазин с галереей товаров</p>
+									<a class="btn btn-red template-price">14000 р.</a>
+								</div>
 							</div>
 						</div>
 
@@ -195,7 +228,7 @@
 			</div>
 			<div class="container">
 				<div class="pagination">
-					<a href="#" class="disabled">Предыдущая</a>
+					<!-- <a href="#" class="disabled">Предыдущая</a> -->
 					<a href="#" class="active">1</a>
 					<a href="#">2</a>
 					<a href="#">3</a>
@@ -282,7 +315,69 @@
         });
 
         myMap.geoObjects.add(myPlacemark);
+
+        myMap.behaviors.disable('scrollZoom');
+
     }
+	</script>
+	<script type="text/javascript">
+		var modalOpen = document.querySelector(".write-us");
+		var popup = document.querySelector(".modal-content");
+		var modalClose = popup.querySelector(".modal-content-close");
+		var personName = popup.querySelector('[name="name"]');
+		var personEmail = popup.querySelector('[name="email"]');
+		var message = popup.querySelector('textarea');
+		var form = popup.querySelector('form');
+		var savedName = localStorage.getItem("personName");
+		var savedEmail = localStorage.getItem("personEmail");
+
+		modalOpen.addEventListener("click", function(event) {
+			event.preventDefault();
+			popup.classList.add("modal-content-show");
+			
+			if (savedName) {
+				personName.value = savedName;
+				personEmail.focus();
+				if (savedEmail) {
+					personEmail.value = savedEmail;
+					message.focus();
+				}
+			} else {
+				personName.focus();
+			};
+
+			return false;
+		});
+
+		modalClose.addEventListener("click", function(event) {
+			event.preventDefault();
+			popup.classList.remove("modal-content-show");
+			popup.classList.remove("modal-error");
+		});
+
+		form.addEventListener("submit", function(event) {
+			popup.classList.remove("modal-error");
+			if (!personName.value || !personEmail.value || !message.value) {
+				event.preventDefault();
+				popup.classList.remove("modal-error");
+				popup.offsetWidth = popup.offsetWidth; //triggering reflow to make the animatio work again
+				popup.classList.add("modal-error"); //как исправить повторный неправильный ввод?
+				
+				//alert('Error!');
+			} else {
+				localStorage.setItem("personName", personName.value);
+				localStorage.setItem("personEmail", personEmail.value);
+			}
+		});
+
+		window.addEventListener("keydown", function(event) {
+			if (event.keyCode === 27) {
+				if (popup.classList.contains("modal-content-show")) {
+					popup.classList.remove("modal-content-show");
+				}
+			}
+		});
+
 	</script>
 
   </body>

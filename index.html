@@ -35,15 +35,46 @@
 						</ul>
 					</nav>
   			</div>
+
 				<div class="slider">
-					<div class="slider-controls"></div>
+					
+					<input type="radio" name="point" id="slide1" checked>
+					<input type="radio" name="point" id="slide2">
+					<input type="radio" name="point" id="slide3">
+
 					<div class="slide slide1"> 
 						<div class="promo"> <!-- not sure -->
-							<h2 class="promo-heading">Долго, дорого, скупулёзно.</h2>
+							<h2 class="promo-heading">Долго, дорого, <br>скупулёзно.</h2>
 							<p class="promo-text">Математически выверенный дизайн для&nbsp;вашего сайта или мобильного приложения.</p>
 							<a href="#" class="btn btn-red">Узнать больше</a>
 						</div>
 					</div>
+
+					<div class="slide slide2"> 
+						<div class="promo"> <!-- not sure -->
+							<h2 class="promo-heading">Любите ли вы математику,<br>
+							как любим ее мы?</h2>
+							<p class="promo-text">Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать.</p>
+							<a href="#" class="btn btn-red">Узнать больше</a>
+						</div>
+					</div>
+
+					<div class="slide slide3"> 
+						<div class="promo"> <!-- not sure -->
+							<h2 class="promo-heading">Только наркотики,<br>
+							только хардкор!</h2>
+							<p class="promo-text">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.</p>
+							<a href="#" class="btn btn-red">Узнать больше</a>
+						</div>
+					</div>
+
+					<div class="slider-controls">
+							<label for="slide1"></label>
+							<label for="slide2"></label>
+							<label for="slide3"></label>
+						
+					</div>
+
 				</div>
   		</div>
   	</header>
@@ -215,6 +246,9 @@
         });
 
         myMap.geoObjects.add(myPlacemark);
+
+        myMap.behaviors.disable('scrollZoom');
+
     }
 	</script>
 
@@ -254,9 +288,14 @@
 		});
 
 		form.addEventListener("submit", function(event) {
+			popup.classList.remove("modal-error");
 			if (!personName.value || !personEmail.value || !message.value) {
 				event.preventDefault();
-				popup.classList.add("modal-error");
+				popup.classList.remove("modal-error");
+				popup.offsetWidth = popup.offsetWidth; //triggering reflow to make the animatio work again
+				popup.classList.add("modal-error"); //как исправить повторный неправильный ввод?
+				
+				//alert('Error!');
 			} else {
 				localStorage.setItem("personName", personName.value);
 				localStorage.setItem("personEmail", personEmail.value);
