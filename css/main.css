@@ -183,7 +183,7 @@ button {
 	margin: 0;
 	cursor: pointer;
 
-	padding: 9px 0;
+	padding: 10px 0;
 	text-align: center;
 
 	background-color: #fb565a;
@@ -273,6 +273,15 @@ body > hr {
 }
 .btn-yellow:active {
 	background-color: #c09b24;
+}
+.btn-grey {
+	background-color: #f1f1f1;
+}
+.btn-grey:hover {
+	background-color: #e5e5e5;
+}
+.btn-grey:active {
+	background-color: #d5d5d5;
 }
 .about {
 	padding-top: 60px;
@@ -577,21 +586,24 @@ body > hr {
 .filter-tools fieldset {
 	padding: 0;
 	margin: 0;
+	margin-bottom: 50px;
 	border: 0;
 }
 .filter-tools legend {
 	padding: 0;
 	margin: 0;
+	margin-bottom: 5px;
 	font-family: inherit;
 	text-transform: uppercase;
 	font-size: 18px;
-	line-height: 30px;
+	line-height: 24px; /*to align with sort tools*/
 }
 .price-range {
 	position: relative;
 
 	height: 80px;
 	/*overflow: hidden; */
+	margin-top: 15px;
 	margin-bottom: 14px;
 
 	background-color: #f1f1f1;
@@ -678,17 +690,97 @@ body > hr {
 	line-height: 1em;
 	text-align: center;
 }
-#max-range {
-	right: 0;
+.grid-selection,
+.feature-selection {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
+.grid-selection input,
+.feature-selection input {
+	display: none;
+}
+.grid-selection input + label,
+.feature-selection input + label {
+	/*position: relative;
+	padding-left: 35px;*/
+	display: inline-block;
 
+	font-size: 16px;
+	line-height: 25px;
+	vertical-align: middle;
+	color: #283136;
+
+	cursor: pointer;
+}
+.grid-selection input + label::before,
+.feature-selection input + label::before {
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	margin-right: 11px;
+
+	font-family: "symbols-nerds";
+	font-size: 25px;
+	color: #c1c1c1;
+	/*position: absolute;
+	left: 0;
+	top: 0;*/
+	
+	/*height: 25px;
+	width: 25px;*/
+}
+.grid-selection label::before {
+	content: "\25cb";
+}
+.feature-selection label::before {
+	content: "\2610";
+}
+.grid-selection input:checked + label::before {
+	content: "\25cf";
+
+}
+.feature-selection input:checked + label::before {
+	content: "\2611";
+}
+.grid-selection input + label:hover,
+.feature-selection input + label:hover {
+	color: #000;
+}
+.grid-selection input + label:hover::before,
+.feature-selection input + label:hover::before {
+	color: #b5b5b5;
+}
+.grid-selection input:disabled + label,
+.feature-selection input:disabled + label {
+	opacity: .4;
+	cursor: auto;
+}
+.grid-selection input:disabled + label::before,
+.feature-selection input:disabled + label::before {
+	color: #b5b5b5;
+	opacity: .3;
+}
+.filter-show {
+	color: black;
+	width: 155px;
+}
+.grid-selection li,
+.feature-selection li {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+.grid-selection li:last-child,
+.feature-selection li:last-child {
+	margin-bottom: 0;
+}
 
 .right-column-store {
 	float: right;
 	width: 560px;
 }
 .sort-tools {
-	height: 36px;
+	height: 42px;
 
 	font-size: 12px;
 	line-height: 18px;
@@ -838,19 +930,39 @@ body > hr {
 }
 .pagination a {
 	display: inline-block;
-	height: 34px;
-	min-width: 34px;
-	line-height: 34px;
-	border: 2px solid #f1f1f1;
+	box-sizing: border-box;
+	height: 38px;
+	min-width: 38px;
+	margin-right: 3px;
+	line-height: 38px;
+	
 	border-radius: 2px;
+	font-size: 12px;
+	font-weight: 500;
 	vertical-align: middle;
 	text-align: center;
 	text-decoration: none;
+	text-transform: uppercase;
 	background-color: #f1f1f1;
 	color: #000;
 }
+.next-page {
+	padding-left: 32px;
+	padding-right: 32px;
+}
+
+.pagination a:hover {
+	background-color: #e5e5e5;
+}
+.pagination a:active {
+	background-color: #d5d5d5;
+	box-shadow: 0 3px rgba(0, 0, 0, 0.15) inset;
+}
 .pagination a.active {
+	border: 2px solid #f1f1f1;
 	background-color: white;
+	line-height: 34px;
+	box-shadow: none;
 }
 /*GENERAL STYLES*/
 p {
